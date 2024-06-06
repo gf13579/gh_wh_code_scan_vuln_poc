@@ -13,6 +13,7 @@ DATABASE_URL = "sqlite:///./test.db"
 
 API_KEY = "ABCD1234"
 DB_PASSWORD = "SuperS3cr3t"
+GH_PAT = "ghp_abcdefghijklmnopqrstuvwxyzABCD012345"
 
 
 # Pydantic model for the User
