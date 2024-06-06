@@ -11,6 +11,9 @@ app = FastAPI()
 # Path to the SQLite database file
 DATABASE_URL = "sqlite:///./test.db"
 
+API_KEY = "ABCD1234"
+DB_PASSWORD = "SuperS3cr3t"
+
 
 # Pydantic model for the User
 class User(BaseModel):
