@@ -26,7 +26,7 @@ def get_db():
 
 @app.get("/search", response_model=List[User])
 def search_users(q: str, conn: Connection = Depends(get_db)):
-    query = "SELECT id, name, email FROM user WHERE name LIKE ? OR email LIKE ?"
+    query = "SELECT id, name, email FROM user WHERE name LIKE %" + q + "%"
     values = (f"%{q}%", f"%{q}%")
     
     try:
